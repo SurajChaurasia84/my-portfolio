@@ -10,6 +10,8 @@ const navLinks = [
   { label: 'Contact', href: '#contact' },
 ]
 
+const logoSrc = `${import.meta.env.BASE_URL}logo.png`
+
 function Navbar({ activeSection = 'home' }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -52,7 +54,7 @@ function Navbar({ activeSection = 'home' }) {
                 </Motion.span>
                 <span className="relative z-10 flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-slate-900">
                   <img
-                    src="/logo.png"
+                    src={logoSrc}
                     alt="Suuraj Dev logo"
                     className="h-full w-full object-cover"
                   />
