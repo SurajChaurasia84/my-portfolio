@@ -17,7 +17,7 @@ function Hero({ hideSidebar = false }) {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center overflow-hidden px-6 py-20 sm:px-8"
+      className="relative flex min-h-screen items-center overflow-hidden px-6 pb-20 pt-32 sm:px-8 sm:pt-36 lg:py-20"
     >
       <div className="pointer-events-none absolute inset-0">
         {particles.map((particle) => (
