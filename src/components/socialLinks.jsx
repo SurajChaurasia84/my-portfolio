@@ -4,7 +4,7 @@ import { InstagramIcon, LinkedInIcon, YouTubeIcon } from './BrandIcons'
 export const socialLinks = [
   {
     icon: WhatsAppIcon,
-    href: 'https://wa.me/919451896022',
+    href: 'https://wa.me/919453396952',
     label: 'WhatsApp',
     colorClass: 'text-emerald-400 hover:text-emerald-300 hover:border-emerald-400/50 hover:shadow-[0_0_22px_rgba(74,222,128,0.24)]',
   },
@@ -22,7 +22,7 @@ export const socialLinks = [
   },
   {
     icon: LinkedInIcon,
-    href: 'https://www.linkedin.com/',
+    href: 'https://www.linkedin.com/in/suraj-chaurasia-a250a526b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     label: 'LinkedIn',
     colorClass: 'text-sky-400 hover:text-sky-300 hover:border-sky-400/50 hover:shadow-[0_0_22px_rgba(56,189,248,0.24)]',
   },
