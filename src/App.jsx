@@ -202,9 +202,9 @@ function App() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(34,211,238,0.16),_transparent_20%),linear-gradient(180deg,_#04050a_0%,_#07111f_45%,_#020308_100%)] text-slate-100 antialiased selection:bg-cyan-400/30">
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.16),transparent_20%),linear-gradient(180deg,#04050a_0%,#07111f_45%,#020308_100%)] text-slate-100 antialiased selection:bg-cyan-400/30">
       <div className="relative overflow-x-clip">
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-[38rem] bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.22),_transparent_42%)]" />
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-152 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.22),transparent_42%)]" />
         <div className="pointer-events-none absolute left-1/2 top-24 h-72 w-72 -translate-x-1/2 rounded-full bg-cyan-400/10 blur-3xl" />
         <div className="pointer-events-none absolute inset-0">
           {pageParticles.map((particle) => (
@@ -224,7 +224,7 @@ function App() {
           {starDots.map((dot, index) => (
             <Motion.span
               key={`${dot.top}-${dot.left}`}
-              className="absolute h-[2px] w-[2px] rounded-full bg-white/80"
+              className="absolute h-0.5 w-0.5 rounded-full bg-white/80"
               style={{ top: dot.top, left: dot.left }}
               animate={{ opacity: [0.2, 0.9, 0.3] }}
               transition={{
@@ -252,7 +252,7 @@ function App() {
             whileInView="show"
             viewport={{ once: true, amount: 0.25 }}
           >
-            <div className="grid gap-10 rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-xl md:grid-cols-[1.2fr_0.8fr] md:p-12">
+            <div className="grid gap-10 rounded-4xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl md:grid-cols-[1.2fr_0.8fr] md:p-12">
               <div>
                 <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-medium text-cyan-200">
                   <Orbit className="h-4 w-4" />
@@ -270,7 +270,7 @@ function App() {
                 {aboutStats.map((stat) => (
                   <div
                     key={stat.label}
-                    className="rounded-[1.5rem] border border-white/10 bg-slate-950/60 p-5"
+                    className="rounded-3xl border border-white/10 bg-slate-950/60 p-5"
                   >
                     <p className="font-['Space_Grotesk'] text-3xl font-bold text-cyan-300">
                       {stat.value}
@@ -406,7 +406,7 @@ function App() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 0.5, delay: index * 0.08 }}
-                    className="flex items-start gap-4 rounded-[1.5rem] border border-white/10 bg-white/[0.05] p-4 backdrop-blur-xl transition-colors duration-300 hover:border-cyan-300/30 hover:bg-white/[0.07] md:items-center md:gap-4 md:px-5 md:py-4"
+                    className="flex items-start gap-4 rounded-3xl border border-white/10 bg-white/5 p-4 backdrop-blur-xl transition-colors duration-300 hover:border-cyan-300/30 hover:bg-white/[0.07] md:items-center md:gap-4 md:px-5 md:py-4"
                   >
                     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-linear-to-br from-cyan-400 to-blue-500 text-white shadow-[0_12px_30px_rgba(34,211,238,0.2)]">
                       <card.icon className="h-4.5 w-4.5" />
