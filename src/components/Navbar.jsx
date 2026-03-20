@@ -10,16 +10,31 @@ const navLinks = [
   { label: 'Contact', href: '#contact' },
 ]
 
-function Navbar() {
+function Navbar({ activeSection = 'home' }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-transparent">
+      <AnimatePresence>
+        {isMenuOpen && (
+          <Motion.button
+            type="button"
+            aria-label="Close menu overlay"
+            onClick={() => setIsMenuOpen(false)}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2, ease: 'easeInOut' }}
+            className="fixed inset-0 z-0 bg-transparent md:hidden"
+          />
+        )}
+      </AnimatePresence>
+
       <div className="mx-auto max-w-6xl px-6 py-4 sm:px-8">
         <Motion.div
-          animate={{ borderRadius: isMenuOpen ? '2rem' : '9999px' }}
+          className="relative z-10 overflow-hidden rounded-[1.75rem] border border-white/10 bg-slate-950/45 px-4 py-3 backdrop-blur-xl"
+          animate={{ height: 'auto' }}
           transition={{ duration: 0.28, ease: 'easeInOut' }}
-          className="overflow-hidden border border-white/10 bg-slate-950/45 px-4 py-3 backdrop-blur-xl"
         >
           <div className="flex items-center justify-between gap-4">
             <a
@@ -51,7 +66,9 @@ function Navbar() {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="font-['Plus_Jakarta_Sans'] text-sm text-slate-300 transition-colors duration-300 hover:text-cyan-300"
+                  className={`font-['Plus_Jakarta_Sans'] text-sm transition-colors duration-300 hover:text-cyan-300 ${
+                    activeSection === link.href.slice(1) ? 'text-cyan-300' : 'text-slate-300'
+                  }`}
                 >
                   {link.label}
                 </a>
@@ -110,7 +127,11 @@ function Navbar() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.2, delay: index * 0.04 }}
-                      className="rounded-2xl px-3 py-2 font-['Plus_Jakarta_Sans'] text-sm text-slate-300 transition-colors duration-300 hover:bg-white/5 hover:text-cyan-300"
+                      className={`rounded-2xl px-3 py-2 font-['Plus_Jakarta_Sans'] text-sm transition-colors duration-300 hover:bg-white/5 hover:text-cyan-300 ${
+                        activeSection === link.href.slice(1)
+                          ? 'bg-white/5 text-cyan-300'
+                          : 'text-slate-300'
+                      }`}
                     >
                       {link.label}
                     </Motion.a>
