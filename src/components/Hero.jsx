@@ -97,7 +97,7 @@ function Hero({ hideSidebar = false }) {
               href="#contact"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.98 }}
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-cyan-300/40 bg-cyan-400 px-6 py-3.5 font-['Space_Grotesk'] text-sm font-bold text-slate-950 shadow-[0_0_34px_rgba(34,211,238,0.35)] transition-colors duration-300 hover:bg-cyan-300"
+              className="inline-flex whitespace-nowrap items-center justify-center gap-2 rounded-full border border-cyan-300/40 bg-cyan-400 px-6 py-3.5 font-['Space_Grotesk'] text-sm font-bold text-slate-950 shadow-[0_0_34px_rgba(34,211,238,0.35)] transition-colors duration-300 hover:bg-cyan-300"
             >
               Start Your Project Today
               <ArrowRight className="h-4 w-4" />
@@ -109,51 +109,49 @@ function Hero({ hideSidebar = false }) {
         </Motion.div>
 
         <Motion.div
-          className="w-full max-w-xl"
+          className="w-full max-w-xl px-5 py-8"
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9, delay: 0.25, ease: 'easeOut' }}
         >
-          <div className="rounded-4xl border border-white/10 bg-white/6 p-5 shadow-[0_0_80px_rgba(8,145,178,0.14)] backdrop-blur-xl">
-            <div className="rounded-[1.75rem] border border-white/10 bg-[linear-gradient(160deg,rgba(10,15,28,0.96),rgba(8,43,64,0.9))] p-6">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="font-['Plus_Jakarta_Sans'] text-sm text-slate-400">
-                    Delivery framework
-                  </p>
-                  <h2 className="mt-2 font-['Space_Grotesk'] text-2xl font-semibold text-white">
-                    Precision builds. Zero filler.
-                  </h2>
-                </div>
-                <div className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">
-                  Live
-                </div>
+          <div className="rounded-[1.75rem] border border-white/10 bg-[linear-gradient(160deg,rgba(10,15,28,0.96),rgba(8,43,64,0.9))] p-6 shadow-[0_0_80px_rgba(8,145,178,0.14)]">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="font-['Plus_Jakarta_Sans'] text-sm text-slate-400">
+                  Delivery framework
+                </p>
+                <h2 className="mt-2 font-['Space_Grotesk'] text-2xl font-semibold text-white">
+                  Precision builds. Zero filler.
+                </h2>
               </div>
+              <div className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">
+                Live
+              </div>
+            </div>
 
-              <div className="mt-8 space-y-4">
-                {[
-                  ['Discovery', 'Clear scope and product priorities in 5 days'],
-                  ['Design', 'Interface systems built for clarity and conversion'],
-                  ['Launch', 'Production-ready code with measurable handoff'],
-                ].map(([title, text]) => (
-                  <div
-                    key={title}
-                    className="rounded-[1.4rem] border border-white/10 bg-white/5 p-4"
-                  >
-                    <div className="flex items-center justify-between gap-4">
-                      <div>
-                        <p className="font-['Space_Grotesk'] text-base font-semibold text-white">
-                          {title}
-                        </p>
-                        <p className="mt-1 font-['Plus_Jakarta_Sans'] text-sm leading-6 text-slate-400">
-                          {text}
-                        </p>
-                      </div>
-                      <div className="h-2.5 w-2.5 rounded-full bg-cyan-300 shadow-[0_0_14px_rgba(103,232,249,0.95)]" />
+            <div className="mt-8 space-y-4">
+              {[
+                ['Discovery', 'Clear scope and product priorities in 5 days'],
+                ['Design', 'Interface systems built for clarity and conversion'],
+                ['Launch', 'Production-ready code with measurable handoff'],
+              ].map(([title, text]) => (
+                <div
+                  key={title}
+                  className="rounded-[1.4rem] border border-white/10 bg-white/5 p-4"
+                >
+                  <div className="flex items-center justify-between gap-4">
+                    <div>
+                      <p className="font-['Space_Grotesk'] text-base font-semibold text-white">
+                        {title}
+                      </p>
+                      <p className="mt-1 font-['Plus_Jakarta_Sans'] text-sm leading-6 text-slate-400">
+                        {text}
+                      </p>
                     </div>
+                    <div className="h-2.5 w-2.5 rounded-full bg-cyan-300 shadow-[0_0_14px_rgba(103,232,249,0.95)]" />
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
         </Motion.div>
