@@ -84,7 +84,7 @@ function Hero({ hideSidebar = false }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
-            Get ready to transform your business with cutting-edge solutions
+            Transform your ideas into powerful, scalable software solutions.
           </Motion.p>
 
           <Motion.div
