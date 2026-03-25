@@ -1,4 +1,4 @@
-# Suuraj Dev Portfolio
+<h1 align="center">Suuraj Dev Portfolio</h1>
 
 ![Portfolio Preview](src/assets/portfolio-preview.png)
 
@@ -6,8 +6,9 @@ A modern dark-themed portfolio and agency-style landing page built with React, V
 
 This project showcases a futuristic software services website with animated sections, responsive navigation, project highlights, contact cards, social links, and subtle star-field effects across the page.
 
-## Live Demo
-https://surajchaurasia84.github.io/my-portfolio/
+<p align="center">
+  🚀 Live Demo: https://surajchaurasia84.github.io/my-portfolio/
+</p>
 
 ## Overview
 
