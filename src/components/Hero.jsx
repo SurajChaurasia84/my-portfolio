@@ -75,7 +75,7 @@ function Hero({ hideSidebar = false }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
           >
-            We only <span className="bg-linear-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">build</span> what we are really really good at.
+            Building <span className="bg-linear-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">solutions</span> that help your business grow.
           </Motion.h1>
 
           <Motion.p
