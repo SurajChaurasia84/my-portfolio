@@ -4,7 +4,7 @@ A modern dark-themed portfolio and agency-style landing page built with React, V
 
 This project showcases a futuristic software services website with animated sections, responsive navigation, project highlights, contact cards, social links, and subtle star-field effects across the page.
 
-## 🚀 Live Demo
+## Live Demo
 https://surajchaurasia84.github.io/my-portfolio/
 
 ## Overview
