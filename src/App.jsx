@@ -120,7 +120,7 @@ function App() {
     {
       icon: MapPin,
       title: 'Visit Us',
-      value: '53 Gorakhpur, Uttar Pradesh',
+      value: '053 Gorakhpur, Uttar Pradesh',
       detail: 'Beyond commits—let’s visit our workspace',
     },
   ]
@@ -400,7 +400,7 @@ function App() {
                         ? 'mailto:hello@suuraj.dev'
                         : card.title === 'Call Us'
                           ? 'tel:+919453396952'
-                          : '#contact'
+                          : 'https://maps.app.goo.gl/Tk3pRVw53k1gxfZN9'
                     }
                     initial={{ opacity: 0, y: 24 }}
                     whileInView={{ opacity: 1, y: 0 }}
