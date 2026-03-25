@@ -397,7 +397,7 @@ function App() {
                     key={card.title}
                     href={
                       card.title === 'Email Us'
-                        ? 'mailto:hello@suuraj.dev'
+                        ? 'mailto:suraj84chaurasia@gmail.com'
                         : card.title === 'Call Us'
                           ? 'tel:+919453396952'
                           : 'https://maps.app.goo.gl/Tk3pRVw53k1gxfZN9'
