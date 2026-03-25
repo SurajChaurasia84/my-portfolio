@@ -1,5 +1,7 @@
 # Suuraj Dev Portfolio
 
+![Portfolio Preview](assets/portfolio-preview.png)
+
 A modern dark-themed portfolio and agency-style landing page built with React, Vite, Tailwind CSS, and Framer Motion.
 
 This project showcases a futuristic software services website with animated sections, responsive navigation, project highlights, contact cards, social links, and subtle star-field effects across the page.
