@@ -1,6 +1,6 @@
 # Suuraj Dev Portfolio
 
-![Portfolio Preview](assets/portfolio-preview.png)
+![Portfolio Preview](src/assets/portfolio-preview.png)
 
 A modern dark-themed portfolio and agency-style landing page built with React, Vite, Tailwind CSS, and Framer Motion.
 
