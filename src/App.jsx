@@ -259,10 +259,10 @@ function App() {
                   About
                 </div>
                 <h2 className="max-w-xl font-['Space_Grotesk'] text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                  We design sharp digital systems for brands that expect measurable outcomes.
+                  We build smart digital solutions for <span className="bg-linear-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">businesses</span> that value real results.
                 </h2>
                 <p className="mt-5 max-w-2xl font-['Plus_Jakarta_Sans'] text-base leading-7 text-slate-300">
-                  From early product framing to launch-ready interfaces, we build lean, high-trust systems that look premium and convert clearly.
+                  From idea to launch, we focus on creating clean, reliable systems that perform well and deliver clear outcomes.
                 </p>
               </div>
 
