@@ -131,9 +131,9 @@ function Hero({ hideSidebar = false }) {
 
             <div className="mt-8 space-y-4">
               {[
-                ['Discovery', 'Clear scope and product priorities in 5 days'],
-                ['Design', 'Interface systems built for clarity and conversion'],
-                ['Launch', 'Production-ready code with measurable handoff'],
+                ['Discovery', 'Turning ideas into structured plans'],
+                ['Design', 'Modern UI/UX that users actually love'],
+                ['Launch', 'Delivering production-ready solutions'],
               ].map(([title, text]) => (
                 <div
                   key={title}
