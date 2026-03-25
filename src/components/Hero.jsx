@@ -118,7 +118,7 @@ function Hero({ hideSidebar = false }) {
             <div className="flex items-center justify-between">
               <div>
                 <p className="font-['Plus_Jakarta_Sans'] text-sm text-slate-400">
-                  Delivery framework
+                  Development process
                 </p>
                 <h2 className="mt-2 font-['Space_Grotesk'] text-2xl font-semibold text-white">
                   Precision builds. Zero filler.
