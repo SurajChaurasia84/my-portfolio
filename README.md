@@ -132,8 +132,6 @@ npm run build
 
 ## Author
 
-Built for the `Suraj Chaurasia` portfolio project.
-
-Software Developer
-
+Built for the `Suraj Chaurasia` portfolio project.\n
+Software Developer\n
 India
